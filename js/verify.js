@@ -20,7 +20,7 @@ async function checkVerification() {
         return
     }
 
-    const url = "https://football-api-server-ane2c4bwdacvf8f6.eastus-01.azurewebsites.nets/coachuser/verification"
+    const url = "https://football-api-server-ane2c4bwdacvf8f6.eastus-01.azurewebsites.net/coachuser/verification"
 
     const options = {
         method: "GET",
