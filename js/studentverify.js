@@ -32,7 +32,7 @@ async function checkVerification() {
     let response = await fetch(url, options)
 
     console.log(response)
-    
+
     if (response.status == 200) {
 
         h1.innerHTML = 'Thank you! Your email has been verified.'
@@ -40,11 +40,11 @@ async function checkVerification() {
 
         console.log("Verification successful")
         localStorage.setItem("token", token);
-        
 
-      /*  setTimeout(() => {
+
+        setTimeout(() => {
             location.href = "main.html"
-        }, 4000)*/
+        }, 4000)
     }
     else {
         h1.innerHTML = "Something went wrong."

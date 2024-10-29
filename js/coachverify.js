@@ -50,9 +50,9 @@ async function checkVerification() {
         console.log(token)
         console.log(response.status)
         console.log(response)
-       /* setTimeout(() => {
+        setTimeout(() => {
             location.href = "index.html"
-        }, 4000)*/
+        }, 4000)
     }
 }
 
