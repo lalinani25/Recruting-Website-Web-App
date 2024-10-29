@@ -37,10 +37,11 @@ async function checkVerification() {
 
         console.log("Verification successful")
         localStorage.setItem("token", token);
+        console.log(response)
 
-        setTimeout(() => {
+      /*  setTimeout(() => {
             location.href = "main.html"
-        }, 4000)
+        }, 4000)*/
     }
     else {
         h1.innerHTML = "Something went wrong."
