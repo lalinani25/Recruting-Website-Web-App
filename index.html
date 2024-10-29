@@ -1,6 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <h1>Football Recruiting WEB</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .header-bar {
+            background-color: #ffffff !important;
+            /* Dark grey color */
+            display: flex;
+            justify-content: space-around;
+            /* Distribute buttons evenly */
+            align-items: center;
+            /* Center items vertically */
+            display: flex;
+        }
+
+        .header-button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            border-radius: 0px;
+            align-items: center;
+            width: 24%;
+            border-right: 2px solid #555;
+        }
+
+        .header-bar button:hover {
+            background-color: #777;
+            /* Lighter on hover */
+        }
+
+        .container {
+            text-align: center;
+            /* Center the contents */
+        }
+    </style>
 </head>
-<h1>Football Recruiting Website</h1>
+
+<body>
+    <div class="header-bar">
+        <button class="header-button" onclick="window.location.href='index.html'">Home</button>
+        <button class="header-button" onclick="window.location.href='main.html'">Main</button>
+        <button class="header-button" onclick="window.location.href='Services.html'">Services</button>
+        <button class="header-button" onclick="window.location.href='Contact.html'">Contact</button>
+    </div>
+
+    <div class="container">
+        <header>
+            <!--img src="logo.png" alt="Logo" class="logo"-->
+        </header>
+
+        <div class="buttons">
+            <button onclick="window.location.href='login.html'">Log in</button>
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+        </div>
+    </div>
+
+    <div class="text-below">
+        <h1>Your Text Below the Background</h1>
+        <p>This is the space below the background image where you can add your text.</p>
+    </div>
+</body>
+
 </html>
