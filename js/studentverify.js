@@ -32,12 +32,14 @@ async function checkVerification() {
     let response = await fetch(url, options)
 
     if (response.status == 200) {
+
+        console.log(response)
         h1.innerHTML = 'Thank you! Your email has been verified.'
         p.innerHTML = 'You will be redirected to the app momentarily.'
 
         console.log("Verification successful")
         localStorage.setItem("token", token);
-        console.log(response)
+        
 
       /*  setTimeout(() => {
             location.href = "main.html"
