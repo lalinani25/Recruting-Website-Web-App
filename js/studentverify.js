@@ -31,9 +31,10 @@ async function checkVerification() {
 
     let response = await fetch(url, options)
 
+    console.log(response)
+    
     if (response.status == 200) {
 
-        console.log(response)
         h1.innerHTML = 'Thank you! Your email has been verified.'
         p.innerHTML = 'You will be redirected to the app momentarily.'
 
