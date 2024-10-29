@@ -47,10 +47,12 @@ async function checkVerification() {
         p.innerHTML = "Please try verifying your account once more."
 
         console.log("Error verifying email address")
-
-        setTimeout(() => {
+        console.log(token)
+        console.log(response.status)
+        console.log(response)
+       /* setTimeout(() => {
             location.href = "index.html"
-        }, 4000)
+        }, 4000)*/
     }
 }
 
