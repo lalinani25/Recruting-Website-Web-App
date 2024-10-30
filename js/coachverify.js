@@ -39,7 +39,7 @@ async function checkVerification() {
         localStorage.setItem("token", token);
 
         setTimeout(() => {
-            location.href = "main.html"
+            location.href = "coachmain.html"
         }, 4000)
     }
     else {

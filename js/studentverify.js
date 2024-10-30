@@ -43,7 +43,7 @@ async function checkVerification() {
 
 
         setTimeout(() => {
-            location.href = "main.html"
+            location.href = "studentmain.html"
         }, 4000)
     }
     else {

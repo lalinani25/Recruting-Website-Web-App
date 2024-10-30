@@ -10,7 +10,7 @@ body, html {
 }
 
 .container {
-    background-image: url('/web-app/images/dynamic-stadium-large-modern-filled-600nw-2472452971.webp'); 
+    background-image: url('/web-app/images/backgroundimg.png'); 
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -54,13 +54,13 @@ button:hover {
 
 .text-below {
       text-align: center;
-      padding: 50px;
-      background-color: #f4f4f4;
-      color: black;
+      padding: 5px;
+      background-color:  #151515;
+      color: white;
     }
     
     .header-button {
         background: none;
-        background-color: #ffffff !important;
+        background-color: #881414 !important;
     }
     

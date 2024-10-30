@@ -7,12 +7,14 @@ signUp.addEventListener('click', async function (event) {
     const name = document.querySelector('#coach_name').value;
     const password = document.querySelector('#coach_password').value;
     const school = document.querySelector('#coach_school').value;
+    const title = document.querySelector('#coach_title').value;
 
     const userData = {
         email: email,
         name: name,
         password: password,
         school: school,
+        title: title
     };
 
 
