@@ -10,7 +10,7 @@ body, html {
 }
 
 .container {
-    background-image: url('/web-app/images/backgroundimg.png'); 
+    background-image: url('http://cdn.mcauto-images-production.sendgrid.net/9fdee810147efd1c/418b4099-4795-456c-8883-fb17c62d1f58/600x337.png'); 
     background-size: cover;
     background-position: center;
     height: 100%;
