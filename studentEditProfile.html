@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Your provided stylesheet */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Exo', sans-serif;
+            position: relative;
+            overflow: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .context {
+            display: flex;
+            width: 100%;
+            position: absolute;
+            top: 15vh;
+            z-index: 1;
+        }
+
+        .context h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+            margin-top: -60px;
+        }
+
+        .area {
+            display: flex;
+            background: #363636;
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+            width: 100%;
+            height: 110%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .circles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .circles li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .circles li:nth-child(1) {
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(2) {
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3) {
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5) {
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6) {
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7) {
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8) {
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9) {
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10) {
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .box {
+            background-color: rgba(0, 0, 0, 0.491);
+            border: 1px solid rgba(0, 0, 0, 0.491);
+            border-radius: 8px;
+            padding: 30px;
+            width: 400px;
+            /* Box width */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            margin-top: 15%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            margin-left: -10px;
+            color: #fff;
+        }
+
+        input[type="email"],
+        input[type="password"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-left: -10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 106%;
+            padding: 10px;
+            margin-left: -10px;
+            background: linear-gradient(90deg, #ff1515, #7c0000);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #3d228e;
+        }
+
+        .text-below {
+            position: absolute;
+            margin-top: 90%;
+            text-align: center;
+            padding: 5px;
+            background-color: #151515;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="area">
+        <span style='font-size:30px; margin-left: 10px; margin-top: 5px;'
+            onclick="window.location.href='studentprofile.html'"><i style ="margin-top: 10px; color: whitesmoke;" class="fa fa-chevron-circle-left"></i></span-->
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div>
+
+
+
+    <div class="container">
+        <div class="box">
+            <h2>EDIT STUDENT PROFILE</h2>
+
+            <label for="student_email">Email:</label>
+            <input type="email" id="student_email" name="student_email" required>
+            <label for="student_name">Name:</label>
+            <input type="text" id="student_name" name="student_name" required>
+            <label for="student_school">School:</label>
+            <input type="text" id="student_school" name="student_school" required>
+            <label for="student_gardYear">Graduation Year:</label>
+            <input type="text" id="student_gradYear" name="student_gradYear" required>
+
+            <i class="fa fa-arrow" style="font-size:24px"></i>
+            <label>Statistics and Measurables:</label><br>
+
+
+            <input type="checkbox" class="checkbox" value="GPA" id="student_gpa" name="student_gpa"
+                onchange="updateInputFields()">
+            <label for="student_gpa" style="display: inline; margin: 5px;">GPA</label>
+            <div id="GPA"></div>
+
+            <input type="checkbox" class="checkbox" value="Position" id="student_position" name="student_position"
+                onchange="updateInputFields()">
+            <label for="student_position" style="display: inline; margin: 5px;">Position</label>
+            <div id="Position"></div>
+
+            <input type="checkbox" class="checkbox" value="Height" id="student_height" name="student_height"
+                onchange="updateInputFields()">
+            <label for="student_height" style="display: inline; margin: 5px;">Height</label><br>
+            <div id="Height" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Weight" id="student_weight" name="student_weight"
+                onchange="updateInputFields()">
+            <label for="student_weight" style="display: inline; margin: 5px;"> Weight</label><br>
+            <div id="Weight" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="40-Time" id="student_forty_time" name="student_forty_time"
+                onchange="updateInputFields()">
+            <label for="student_forty_time" style="display: inline; margin: 5px;">40-Time</label> <br>
+            <div id="40-Time" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Pass-Yards" id="student_pass_yards" name="student_pass_yards"
+                onchange="updateInputFields()">
+            <label for="student_pass_yards" style="display: inline; margin: 5px;">Pass Yards</label><br>
+            <div id="Pass-Yards" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Completion-Percentage" id="student_comp_percentage"
+                name="student_comp_percentage" onchange="updateInputFields()">
+            <label for="student_comp_percentage" style="display: inline; margin: 5px;">Completion Percentage</label><br>
+            <div id="Completion-Percentage" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Passing-Touchdowns" id="student_pass_tds"
+                name="student_pass_tds" onchange="updateInputFields()">
+            <label for="student_pass_tds" style="display: inline; margin: 5px;">Passing Touchdowns</label><br>
+            <div id="Passing-Touchdowns" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Pass-Interceptions" id="student_pass_ints"
+                name="student_pass_ints" onchange="updateInputFields()">
+            <label for="student_pass_ints" style="display: inline; margin: 5px;">Pass Interceptions</label><br>
+            <div id="Pass-Interceptions" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Receptions" id="student_rec" name="student_rec"
+                onchange="updateInputFields()">
+            <label for="student_rec" style="display: inline; margin: 5px;">Receptions</label><br>
+            <div id="Receptions" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Receiving-Yards" id="student_rec_yards"
+                name="student_rec_yards" onchange="updateInputFields()">
+            <label for="student_rec_yards" style="display: inline; margin: 5px;">Receiving Yards</label><br>
+            <div id="Receiving-Yards" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Red-Zone-Touchdowns" id="student_red_tds"
+                name="student_red_tds" onchange="updateInputFields()">
+            <label for="student_red_tds" style="display: inline; margin: 5px;">Red Zone Touchdowns</label><br>
+            <div id="Red-Zone-Touchdowns" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Rush-Yards" id="student_rush_yards" name="student_rush_yards"
+                onchange="updateInputFields()">
+            <label for="student_rush_yards" style="display: inline; margin: 5px;">Rush Yards</label><br>
+            <div id="Rush-Yards" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Rush-Touchdowns" id="student_rush_tds"
+                name="student_rush_tds" onchange="updateInputFields()">
+            <label for="student_rush_tds" style="display: inline; margin: 5px;">Rush Touchdowns</label><br>
+            <div id="Rush-Touchdowns" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Yards-Per-Attempt" id="student_yards_per_att"
+                name="student_yards_per_att" onchange="updateInputFields()">
+            <label for="student_yards_per_att" style="display: inline; margin: 5px;">Yards Per Attempt</label> <br>
+            <div id="Yards-Per-Attempt" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Tackles" id="student_tackles" name="student_tackles"
+                onchange="updateInputFields()">
+            <label for="student_tackles" style="display: inline; margin: 5px;">Tackles:</label> <br>
+            <div id="Tackles" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Sacks" id="student_sacks" name="student_sacks"
+                onchange="updateInputFields()">
+            <label for="student_sacks" style="display: inline; margin: 5px;">Sacks:</label><br>
+            <div id="Sacks" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Interceptions" id="student_ints" name="student_ints"
+                onchange="updateInputFields()">
+            <label for="student_ints" style="display: inline; margin: 5px;">Interceptions:</label><br>
+            <div id="Interceptions" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Tackle-For-Loss" id="student_tfls" name="student_tfls"
+                onchange="updateInputFields()">
+            <label for="student_tfls" style="display: inline; margin: 5px;">Tackle For Loss:</label> <br>
+            <div id="Tackle-For-Loss" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Field-Goal-Made" id="student_fg_made" name="student_fg_made"
+                onchange="updateInputFields()">
+            <label for="student_fg_made" style="display: inline; margin: 5px;">Field Goal Made:</label><br>
+            <div id="Field-Goal-Made" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Field-Goal-Missed" id="student_fg_missed"
+                name="student_fg_missed" onchange="updateInputFields()">
+            <label for="student_fg_missed" style="display: inline; margin: 5px;">Field Goal Missed:</label><br>
+            <div id="Field-Goal-Missed" class="container"></div>
+
+            <input type="checkbox" class="checkbox" value="Punt-Average" id="student_punt_avg" name="student_punt_avg"
+                onchange="updateInputFields()">
+            <label for="student_punt_avg" style="display: inline; margin: 5px;">Punt Average:</label><br><br>
+            <div id="Punt-Average" class="container"></div>
+
+            <button type="button" class="studen_update" id="student_update">Update</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        function updateInputFields() {
+
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+            checkboxes.forEach(checkbox => {
+                const container = document.getElementById(checkbox.value);
+
+                if (checkbox.checked) {
+                    // Show the container
+                    container.style.display = 'block';
+
+                    // Only create the input field if it doesn't exist
+                    if (!container.querySelector('.input-field')) {
+                        const inputField = document.createElement('input');
+                        inputField.type = 'text';
+                        inputField.id = `input-${checkbox.value}`
+                        inputField.placeholder = `Enter value for ${checkbox.value}`;
+                        inputField.className = 'input-field';
+                        console.log(container.id)
+                        container.appendChild(inputField);
+                    }
+                } else {
+                    // Hide the container if unchecked and remove input field
+                    container.style.display = 'none';
+                    const inputField = container.querySelector('.input-field');
+                    if (inputField) {
+                        inputField.remove(); // Optionally remove the input field when unchecked
+                    }
+                }
+            });
+        }
+    </script>
+
+    <script type="module" src="js/studentEditProfile.js"></script>
+
+    <footer class="text-below">
+        <p> The Recruit Zone &copy; 2024</p>
+    </footer>
+</body>
+
+</html>
