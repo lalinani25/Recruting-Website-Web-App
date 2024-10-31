@@ -16,7 +16,7 @@ update.addEventListener('click', async function (event) {
         gpa = document.querySelector('#input-GPA').value;
     }
     else{
-        gpa = "";
+        gpa = null;
     }
 
     let position = "";
@@ -24,7 +24,7 @@ update.addEventListener('click', async function (event) {
         position = document.querySelector('#input-Position').value;
     }
     else{
-        position = "";
+        position = null;
     }
 
     let height = "";
@@ -32,7 +32,7 @@ update.addEventListener('click', async function (event) {
          height = document.querySelector('#input-Height').value;
     }
     else{
-        height = "";
+        height = null;
     }
 
     let weight = "0";
@@ -40,7 +40,7 @@ update.addEventListener('click', async function (event) {
         weight = document.querySelector('#input-Weight').value;
     }
     else{
-        weight = "0";
+        weight = null;
     }
 
     let forty_time = "0";
@@ -48,7 +48,7 @@ update.addEventListener('click', async function (event) {
         forty_time = "document.querySelector('#input-40-Time').value";
     }
     else{
-        forty_time = "0";
+        forty_time = null;
     }
 
     let pass_yards = "0";
@@ -56,7 +56,7 @@ update.addEventListener('click', async function (event) {
         pass_yards = document.querySelector('#input-Pass-Yards').value;
     }
     else{
-        pass_yards = "0";
+        pass_yards = null;
     }
 
     let comp_percentage = "0";
@@ -64,7 +64,7 @@ update.addEventListener('click', async function (event) {
         comp_percentage = document.querySelector('#input-Completion-Percentage').value;
     }
     else{
-        comp_percentage = "0";
+        comp_percentage = null;
     }
 
     let pass_tds = "0";
@@ -72,7 +72,7 @@ update.addEventListener('click', async function (event) {
         pass_tds = document.querySelector('#input-Passing-Touchdowns').value;
     }
     else{
-        pass_tds = "0";
+        pass_tds = null;
     }
 
     let pass_ints = "0";
@@ -80,7 +80,7 @@ update.addEventListener('click', async function (event) {
         pass_ints = document.querySelector('#input-Pass-Interceptions').value;
     }
     else{
-        pass_ints = "0";
+        pass_ints = null;
     }
 
     let rec = "0";
@@ -88,7 +88,7 @@ update.addEventListener('click', async function (event) {
         rec = document.querySelector('#input-Receptions').value;
     }
     else{
-        rec = "0";
+        rec = null;
     }
 
     let rec_yards = "0";
@@ -96,7 +96,7 @@ update.addEventListener('click', async function (event) {
         rec_yards = document.querySelector('#input-Receiving-Yards').value;
     }
     else{
-        rec_yards = "0";
+        rec_yards = null;
     }
 
     let red_tds = "0";
@@ -104,7 +104,7 @@ update.addEventListener('click', async function (event) {
         red_tds = document.querySelector('#input-Red-Zone-Touchdowns').value;
     }
     else{
-        red_tds = "0";
+        red_tds = null;
     }
 
     let rush_yards = "0";
@@ -112,7 +112,7 @@ update.addEventListener('click', async function (event) {
         rush_yards = document.querySelector('#input-Rush-Yards').value;
     }
     else{
-        rush_yards = "0";
+        rush_yards = null;
     }
 
     let rush_tds = "0";
@@ -120,7 +120,7 @@ update.addEventListener('click', async function (event) {
         document.querySelector('#input-Rush-Touchdowns').value;
     }
     else{
-        rush_tds = "0";
+        rush_tds = null;
     }
 
     let yards_per_att = "0";
@@ -128,7 +128,7 @@ update.addEventListener('click', async function (event) {
         yards_per_att = document.querySelector('#input-Yards-Per-Attempt').value;
     }
     else{
-        yards_per_att = "0";
+        yards_per_att = null;
     }
 
     let tackles = "0";
@@ -136,7 +136,7 @@ update.addEventListener('click', async function (event) {
         tackles = document.querySelector('#input-Tackles').value;
     }
     else{
-        tackles = "0";
+        tackles = null;
     }
 
     let sacks = "0";
@@ -144,7 +144,7 @@ update.addEventListener('click', async function (event) {
         sacks = document.querySelector('#input-Sacks').value;
     }
     else{
-        sacks = "0";
+        sacks = null;
     }
 
     let ints = "0";
@@ -152,7 +152,7 @@ update.addEventListener('click', async function (event) {
         ints = document.querySelector('#input-Interceptions').value;
     }
     else{
-        ints = "0";
+        ints = null;
     }
 
     let tfls = "0";
@@ -160,7 +160,7 @@ update.addEventListener('click', async function (event) {
         tfls = document.querySelector('#input-Tackle-For-Loss').value;
     }
     else{
-        tfls = "0";
+        tfls = null;
     }
 
     let fg_made = "0";
@@ -168,7 +168,7 @@ update.addEventListener('click', async function (event) {
         fg_made = document.querySelector('#input-Field-Goal-Made').value;
     }
     else{
-        fg_made = "0";
+        fg_made = null;
     }
 
     let fg_missed = "0";
@@ -176,7 +176,7 @@ update.addEventListener('click', async function (event) {
         fg_missed = document.querySelector('#input-Field-Goal-Missed').value;
     }
     else{
-        fg_missed = "0";
+        fg_missed = null;
     }
 
     let punt_avg = "0";
@@ -184,7 +184,7 @@ update.addEventListener('click', async function (event) {
         punt_avg = document.querySelector('#input-Punt-Average').value;
     }
     else{
-        punt_avg = 0;
+        punt_avg = null;
     }
     
     const userData = {
