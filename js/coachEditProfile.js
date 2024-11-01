@@ -1,8 +1,62 @@
+const user = localStorage.getItem("user");
 const token = localStorage.getItem("token");
 console.log(token)
 
 const update = document.querySelector('#coach_update');
 const message = document.querySelector("p");
+
+let url1 = "https://football-api-server-ane2c4bwdacvf8f6.eastus-01.azurewebsites.net/coachuser/data"
+
+try {
+    let response = await fetch(url1, {
+        method: 'GET',
+        headers: {
+            "Authorization": `Bearer ${token}`
+        },
+
+    })
+
+    if (response.ok) {
+        let data = [];
+        data = await response.json()
+        console.log(data)
+
+        if(data[0].email != undefined){
+            const container = document.getElementById("coach_email");
+            container.style.display = 'block';
+            container.value = data[0].email;
+        }
+
+        if(data[0].name != undefined){
+            const container = document.getElementById("coach_name");
+            container.style.display = 'block';
+            container.value = data[0].name;
+        }
+
+        if(data[0].school != undefined){
+            const container = document.getElementById("coach_school");
+            container.style.display = 'block';
+            container.value = data[0].school;
+        }
+
+        if(data[0].title != undefined){
+            const container = document.getElementById("coach_title");
+            container.style.display = 'block';
+            container.value = data[0].title;
+        }
+
+        if(data[0].coaching_position != undefined){
+            const container = document.getElementById("coaching_position");
+            container.style.display = 'block';
+            container.value = data[0].coaching_position;
+        }
+    }
+
+} catch (error) {
+    message.innerHTML = "Error: An error occurred";
+    message.style.color = 'red';
+}
+
 
 update.addEventListener('click', async function (event) {
 

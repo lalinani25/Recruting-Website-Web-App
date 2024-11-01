@@ -108,6 +108,10 @@
         button:hover {
             background-color: rgba(0, 0, 0, 0.737);
         }
+
+        p{
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -131,10 +135,17 @@
             <button style="float:right" class="edit_button" onclick="window.location.href='coachEditProfile.html'"><i
                     class="fa fa-edit" style="font-size:24px; color:whitesmoke"></i></button>
 
-            <label for="coach_email">Email:</label>
-            <label for="coach_name">Name:</label>
-            <label for="coach_school">School:</label>
-            <label for="coach_title">Title:</label>
+           
+            <div id="coach_email" class="container1"></div>
+
+            <div id="coach_name" class="container1"></div>
+
+            <div id="coach_school" class="container1"></div>
+
+            <div id="coach_title" class="container1"></div>
+
+            <div id="coaching_position" class="container1"></div>
+
 
         </div>
 
@@ -143,6 +154,7 @@
     <div class="text-below">
         <p> The Recruit Zone &copy; 2024</p>
     </div>
+    <script type="module" src="js/coachProfileInfo.js"></script>
     <script type="module" src="js/coachLogout.js"></script>
 </body>
 
