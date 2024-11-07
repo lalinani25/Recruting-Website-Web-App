@@ -10,7 +10,7 @@ body, html {
 }
 
 .container {
-    background-image: url('http://cdn.mcauto-images-production.sendgrid.net/9fdee810147efd1c/418b4099-4795-456c-8883-fb17c62d1f58/600x337.png'); 
+    background-image: url('http://cdn.mcauto-images-production.sendgrid.net/9fdee810147efd1c/31d1fe30-879d-4b17-a342-80b80492d05d/1024x576.JPG'); 
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -18,6 +18,7 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 
 header {

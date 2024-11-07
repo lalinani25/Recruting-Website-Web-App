@@ -20,7 +20,7 @@ try {
         console.log(data)
 
         console.log(data[0].email)
-        console.log(data[0].email != undefined)
+
 
         if(data[0].email != undefined){
             const container = document.getElementById("student_email");
@@ -280,6 +280,34 @@ try {
                 inputField.id = "punt_average"
                 inputField.textContent = `Punt Average: ${data[0].punt_avg}`;
                 container.appendChild(inputField);
+        }
+
+        
+        console.log(data[0].video)
+        if(data[0].video != undefined){
+            
+            const container = document.getElementById("uploaded_video");
+            container.style.display = 'block';
+
+            console.log(container)
+
+            const videoElement = document.createElement('video');
+            videoElement.setAttribute('controls', ''); 
+
+
+            const sourceElement = document.createElement('source');
+            sourceElement.setAttribute('src', data[0].video);
+            sourceElement.setAttribute('type', 'video/mp4'); 
+    
+            console.log(sourceElement)
+
+            videoElement.appendChild(sourceElement);
+            container.innerHTML = '';
+
+            console.log(container)
+            container.appendChild(videoElement);
+
+            console.log(container)
         }
 
     }
