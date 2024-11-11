@@ -1,5 +1,5 @@
 const uploadButton = document.querySelector('#upload_button');
-const videoFileInput = document.getElementById('videoFile');
+const videoFileInput = document.getElementById('bannerPicInput');
 const token = localStorage.getItem('token');
 
 uploadButton.addEventListener('click', async function (event) {
