@@ -72,6 +72,30 @@ try {
                 container.appendChild(inputField);
         }
 
+        console.log(data[0].image)
+
+        if (data[0].image != undefined) {
+
+            console.log("test")
+    
+            const container = document.getElementById("profile-picture");
+            container.style.display = 'block';
+    
+            const imgElement = document.createElement('img');  // Dynamically create the <img> element
+            imgElement.src = data[0].image;  // Create a URL for the image file
+            imgElement.alt = 'Profile Picture';  // Set a fallback alt text in case the image fails to load
+    
+            // Set attributes to make sure the image fits within the circle
+            imgElement.style.width = '100%';    // Set width to 100% of the parent container
+            imgElement.style.height = '100%';   // Set height to 100% of the parent container
+            imgElement.style.objectFit = 'cover';  // Ensure the image fully covers the circle without distortion
+    
+            console.log(container)
+            container.appendChild(imgElement);
+    
+            console.log(container)
+        }
+
     }
 
 } catch (error) {
