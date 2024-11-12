@@ -28,6 +28,7 @@ try {
         console.log(container)
         console.log(data.length)
 
+
         for (let i = 0; i < data.length; i++) {
 
             console.log(data)
@@ -133,6 +134,7 @@ async function searchAnnouncements() {
             container.innerHTML = '';
             console.log(container)
             console.log(data.length)
+
 
             for (let i = 0; i < data.length; i++) {
 
