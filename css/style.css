@@ -23,14 +23,12 @@ body, html {
 
 header {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    align-items: center;
+    margin-top: -300px;
 }
 
 .logo {
     width: 100px; /* Adjust logo size */
-    margin-right: -1225px;
-    margin-top: 0px;
 }
 
 .buttons {
