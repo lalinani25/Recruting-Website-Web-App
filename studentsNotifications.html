@@ -42,7 +42,7 @@
         .main-container {
             max-width: 1200px;
             width: 100%;
-            margin-right: 40px;
+            margin-right: 0px;
             padding: 20px;
             display: flex;
             gap: 20px;
@@ -171,6 +171,12 @@
             transform: scale(1.1);
         }
 
+        .accept_btn{
+            width: 50px;
+            text-size-adjust: 20px;
+            margin-right: -300px;
+        }
+
         .text-below {
             text-align: center;
             padding: 2px;
@@ -190,7 +196,7 @@
                 style='font-size:24px; color:whitesmoke'></i></button>
         <button style="float:right; margin-left: 50px; " class="header-button"><a href="./coachSearchPage.html"
                 id="std_button"><i style="font-size:24px; color: whitesmoke;" class="fa">&#xf0c0;</i></a></button>
-        <button style="float:right; margin-right: -35px" class="header-button" onclick="window.location.href='./coachesNotifications.html'"><i
+        <button style="float:right; margin-right: -35px" class="header-button" onclick="window.location.href='./studentsNotifications.html'"><i
                 style="font-size:20px; color: whitesmoke;" class="fa fa-bell"></i></button>
     </div>
 
@@ -199,21 +205,13 @@
         <img src="./images/LOGO.png" alt="Logo" class="logo" style="height: 250px; width: 250px; text-align: center;">
     </div>
 
-    <div class="section" style="align-items: center;margin-right: -10px;">
-        <input type="text" placeholder="Search by school or position..." name="search" id="search_announcements">
-        <button type="submit" id="searchAnnouncements" style="padding: 11px;"><i class="fa fa-search"></i></button>
-    </div>
-
-    <h2>ANNOUNCEMENTS</h2>
-    <button class="create_announc" style="margin-top: -50px; margin-right: -300px;"
-        onclick="window.location.href='createAnnouncement.html'">+</button>
-
+    <h2>Notifications</h2>
 
     <!-- Main Content Container -->
 
     <div class="main-container">
 
-        <div id="coach_main">
+        <div id="student_notifications">
         </div>
     </div>
 
@@ -222,8 +220,8 @@
 <div class="text-below">
     <p> The Recruit Zone &copy; 2024</p>
 </div>
-<script type="module" src="js/displayAndSearchAnnouncments.js"></script>
-<script type="module" src="js/coachLogout.js"></script>
+<script type="module" src="js/getStudentNotifications.js"></script>
+<script type="module" src="js/studentLogout.js"></script>
 </body>
 
 </html>
