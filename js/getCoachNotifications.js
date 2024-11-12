@@ -40,13 +40,13 @@ try {
             console.log(invitation)
 
             const subject = document.createElement('p');
-            subject.textContent = `Subject: ${data[i].subject}`;
+            subject.textContent = `${data[i].subject}`;
             invitation.appendChild(subject)
 
             console.log(invitation)
 
             const description = document.createElement('p');
-            description.textContent = `Description: ${data[i].description}`
+            description.textContent = `${data[i].description}`
             invitation.appendChild(description)
 
 
