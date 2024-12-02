@@ -237,7 +237,7 @@ search_btn.addEventListener('click', async function (event) {
                         const sender = user2._id
                         const receiver = data[i]._id
                         const subject = "Request for Contact Information"
-                        const description = `Coach ${user2.name} is requesting you contact information for further recruting details.`
+                        const description = `Coach ${user2.name} is requesting your contact information for further recruting details.`
 
                         const invitation = {
                             sender: sender,
