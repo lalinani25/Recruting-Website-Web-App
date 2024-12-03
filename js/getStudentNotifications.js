@@ -34,7 +34,6 @@ try {
         
 
         for (let i = 0; i < data.length; i++) {
-
             const invitation = document.createElement('div')
             invitation.className = "box"
 
@@ -47,7 +46,7 @@ try {
             const acceptmessagebtn = document.createElement("button")
             acceptmessagebtn.className = "accept_btn"
             acceptmessagebtn.id = `accept_btn${i}`
-            acceptmessagebtn.textContent = "✉️"
+            acceptmessagebtn.textContent = "✔️"
             invitation.appendChild(acceptmessagebtn)
 
 
@@ -98,7 +97,11 @@ try {
                     if (response.ok) {
                         
                             const data = response
+                            mssg.innerHTML = "Your email was shared with the coach!"
                             console.log(data)
+                            setTimeout(function() {
+                                location.reload();
+                            }, 1000);
                           
                     } else {
                         const errorData = await response.json();
@@ -133,7 +136,10 @@ try {
                         data.splice(i, 1)
                         invitationArray.splice(i, 1)
                         console.log("deleted successfully")
-                        location.reload()
+                        mssg.innerHTML = "Invitation has been declined!"
+                            setTimeout(function() {
+                                location.reload();
+                            }, 1000);
                           
                     } else {
                         const errorData = await response.json();
