@@ -239,6 +239,130 @@
             margin-top: 20px;
             /* Space above the footer */
         }
+
+        .coach-profile {
+    display: flex; /* Switch to a horizontal layout */
+    flex-direction: row;
+    align-items: center;
+    background: #494949;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 370px; /* Adjust width to accommodate horizontal layout */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color:#ffffff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.coach-profile:hover {
+    transform: scale(1.05); 
+    background-color: #4d4d4d;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px; /* Adds space between the picture and text */
+    background-color: #ccc; /* Placeholder color */
+    transition: transform 0.3s ease;
+}
+
+.coach-profile:hover .profile-picture {
+    transform: scale(1.1);
+}
+
+.coach-info {
+    display: flex;
+    flex-direction: column; /* Stack information vertically */
+    gap: 5px; /* Space between text elements */
+}
+
+.coach-name {
+    position: relative;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coach-class, .coach-position, .coach-school {
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Popup container */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Make it more responsive */
+    max-width: 600px; /* Max width of the pop-up */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Add vertical scrolling */
+    max-height: 90vh; /* Set a max height for the pop-up */
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+.close-button:hover {
+    color: #f00;
+}
+
+/* Fade-in animation */
+.popup {
+    animation: fadeIn 0.3s ease;
+}
+
+/* Background video */
+.background-video {
+    width: 100%; /* Take up full width of the container */
+    height: auto; /* Adjust the height automatically to maintain aspect ratio */
+    max-height: 400px; /* Optionally, set a max height for the video */
+    object-fit: cover; /* Ensures the video covers the container's area */
+    border-radius: 8px; /* Optional: adds rounded corners to the video */
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
     </style>
 </head>
 
@@ -272,7 +396,7 @@
 
         <div class="box">
 
-            <input type="text" placeholder="Search.." name="search" id="search_students">
+            <input type="text" placeholder="Search by school, position, or graduation year" name="search" id="search_students">
             <button type="submit" id="searchStudentsBtn"><i class="fa fa-search"></i></button>
 
         </div>

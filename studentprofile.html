@@ -63,7 +63,7 @@
 
 
         .upload_button {
-            background-color: #000000;
+            background-color:  #2e2e2e;
             color: #151515;
             border: 0%;
             cursor: pointer;
@@ -78,17 +78,26 @@
         }
 
         .uploadProfilePic_button {
-            background-color: #000000;
+            background-color: #ff4d4d;
             color: #151515;
             border: 0%;
             cursor: pointer;
             border-radius: 0%;
-            align-items: center;
-            margin-top: -20px;
-            margin-right: 20px;
+            margin-top: 90px;
+            margin-left: -70px;
             width: 0%;
             height: 0%;
-            float: left;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+            position:absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
         }
 
         .upload_video {
@@ -211,6 +220,7 @@
             justify-content: center;
             cursor: pointer;
             outline: none;
+            
         }
 
         /* Main container for profile and statistics */
@@ -272,6 +282,7 @@
             justify-content: center;
             cursor: pointer;
             outline: none;
+            margin-top: -40px;
         }
 
         /* Hide file inputs */
@@ -466,8 +477,8 @@
 
     <div class="banner" id="banner">
         <input type="file" id="bannerPicInput" accept="video/*" onchange="handleBannerPicUpload(event)">
-        <button class="upload-btn" onclick="document.getElementById('bannerPicInput').click()">+</button>
-        <button style="float:right" class="upload_button" id="upload_button"><i class="fa fa-upload"
+        <button class="upload-btn" title="Choose video" onclick="document.getElementById('bannerPicInput').click()">+</button>
+        <button style="float:right" title="Upload video" class="upload_button" id="upload_button"><i class="fa fa-upload"
                 style="font-size:24px; color:whitesmoke"></i></button>
     </div>
 
@@ -477,8 +488,8 @@
         <div class="profile-container">
             <div class="profile-picture" id="profile-picture">
                 <input type="file" id="profilePicInput" accept="image/*">
-                <button class="upload-btn" onclick="document.getElementById('profilePicInput').click()">+</button>
-                <button style="float:right" class="uploadProfilePic_button" id="uploadProfilePic_button"><i
+                <button class="upload-btn" title="Choose image" onclick="document.getElementById('profilePicInput').click()">+</button>
+                <button style="float:right" title="Upload profile picture" class="uploadProfilePic_button" id="uploadProfilePic_button"><i
                         class="fa fa-upload" style="font-size:24px; color:whitesmoke"></i></button>
             </div>
             <div class="info-section">

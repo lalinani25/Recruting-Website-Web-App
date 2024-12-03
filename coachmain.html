@@ -177,6 +177,57 @@
             background-color: #151515;
             color: white;
         }
+
+           /* Announcement card styles */
+           .announcement-card {
+            background-color: #2e2e2e;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            color: #ffffff;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .announcement-card h3 {
+            font-size: 1.5em;
+            color: #e26161;
+            margin: 0;
+            text-align: center;
+        }
+
+        .announcement-card p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .announcement-card .timestamp {
+            font-size: 0.9em;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        .announcement-card .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+            color: #ff1515;
+        }
+
+        /* Center the announcements section */
+        #coach_main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
     </style>
 </head>
 
@@ -211,11 +262,11 @@
 
     <!-- Main Content Container -->
 
-    <div class="main-container">
+   
 
         <div id="coach_main">
         </div>
-    </div>
+ 
 
     </div>
 </body>

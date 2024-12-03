@@ -92,21 +92,31 @@ body {
             margin-right: 35px;
             width: 0%;
             height: 0%;
-            float: left;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
         }
 
         .uploadProfilePic_button {
-            background-color: #000000;
-            color: #151515;
-            border: 0%;
-            cursor: pointer;
-            border-radius: 0%;
+            position: absolute;
+            margin-top: 97px;
+            margin-left: 10px;
+            background-color: #ff4d4d;
+            /* Bright red color */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+            display: flex;
             align-items: center;
-            margin-top: -20px;
-            margin-right: 20px;
-            width: 0%;
-            height: 0%;
-            float: left;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
         }
 
         /* General page styling */
@@ -160,6 +170,7 @@ body {
             justify-content: center;
             cursor: pointer;
             outline: none;
+            
         }
 
         /* Main container for profile and statistics */
@@ -344,8 +355,8 @@ body {
         <div class="profile-container">
             <div class="profile-picture" id="profile-picture">
                 <input type="file" id="profilePicInput" accept="image/*">
-                <button class="upload-btn" onclick="document.getElementById('profilePicInput').click()">+</button>
-                <button style="float:right" class="uploadProfilePic_button" id="uploadProfilePic_button"><i
+                <button class="upload-btn" title="Choose image" onclick="document.getElementById('profilePicInput').click()">+</button>
+                <button style="float:right" title="Upload profile picture" class="uploadProfilePic_button" id="uploadProfilePic_button"><i
                         class="fa fa-upload" style="font-size:24px; color:whitesmoke"></i></button>
             </div>
 

@@ -25,6 +25,7 @@ try {
 
         let data = []
         data = await response.json()
+       
 
         console.log(data)
         container.innerHTML = '';
@@ -40,13 +41,14 @@ try {
             console.log(invitation)
 
             const subject = document.createElement('p');
-            subject.textContent = `${data[i].subject}`;
+            subject.textContent = `Subject: ${data[i].subject}`;
+           
             invitation.appendChild(subject)
 
             console.log(invitation)
 
             const description = document.createElement('p');
-            description.textContent = `${data[i].description}`
+            description.textContent = ` ${data[i].description}`
             invitation.appendChild(description)
 
 
@@ -61,6 +63,6 @@ try {
         mssg.style.color = 'red';
     }
 } catch (error) {
-    mssg.innerHTML = "Error: An error occurred";
+    mssg.innerHTML = "Error: An error occurred" + error;
     mssg.style.color = 'red';
 }
