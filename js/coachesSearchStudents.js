@@ -139,6 +139,7 @@ search_btn.addEventListener('click', async function (event) {
                                 
                                     const data = response
                                     console.log(data)
+                                    alert(`Ivitation was sent successfully!`);
                                   
                             } else {
                                 const errorData = await response.json();

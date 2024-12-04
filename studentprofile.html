@@ -13,7 +13,7 @@
             /* Dark grey color */
             list-style-type: none;
             width: 100%;
-            height: 70px;
+            height: 50px;
             margin: 0;
             padding: .3%;
             overflow: hidden;
@@ -63,18 +63,26 @@
 
 
         .upload_button {
-            background-color:  #2e2e2e;
+            background-color: #ff4d4d;
             color: #151515;
             border: 0%;
             cursor: pointer;
             border-radius: 0%;
-            align-items: center;
-            padding: 5px;
-            margin-top: 130px;
-            margin-right: 35px;
+            margin-top: 240px;
+            margin-left:1218px;
             width: 0%;
             height: 0%;
-            float: left;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 20px;
+            position:absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
         }
 
         .uploadProfilePic_button {
@@ -83,8 +91,8 @@
             border: 0%;
             cursor: pointer;
             border-radius: 0%;
-            margin-top: 90px;
-            margin-left: -70px;
+            margin-top: 97px;
+            margin-left: 10px;
             width: 0%;
             height: 0%;
             border: none;
@@ -293,14 +301,16 @@
 
         /* Info section */
         .info-section {
-            text-align: center;
-            padding: 20px;
             background-color: #2e2e2e;
-            /* Darker gray background for text */
+            /* Darker gray for statistics section */
             border-radius: 8px;
-            margin-top: 15px;
+            padding: 15px;
             width: 300px;
             color: #e0e0e0;
+            margin-top: 150px;
+            /* Matches the info-section margin for alignment */
+            position: absolute;
+          
         }
 
         .info-section h1 {
@@ -312,6 +322,16 @@
         .info-section p {
             color: #c0c0c0;
             /* Lighter gray for details */
+        }
+
+        .container1{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #3a3a3a;
+            /* Darker gray background for stats */
+            border-radius: 5px;
         }
 
         /* Statistics section styling */
