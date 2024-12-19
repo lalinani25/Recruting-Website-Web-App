@@ -51,6 +51,7 @@ try {
 
             const description = document.createElement('p');
             description.textContent = ` ${data[i].description}`;
+            console.log(data[i].description)
             invitation.appendChild(description);
 
             container.appendChild(invitation);
